@@ -9,6 +9,10 @@ async function newContract() {
   const arbiter = document.getElementById('arbiter').value;
   const value = ethers.utils.parseEther(document.getElementById('ether').value);
   const contract = await deploy(arbiter, beneficiary, value);
+  await contract.deployed();
+  let deployedTrxs = JSON.parse(localStorage.getItem('deployedTrxs')) || [];
+  deployedTrxs.push(contract.address);
+  localStorage.setItem('deployedTrxs', JSON.stringify(deployedTrxs));
   addContract(++contracts, contract, arbiter, beneficiary, value);
 }
 
