@@ -1,15 +1,17 @@
 body {
-  background-color: #eee;
+  background-color: rgb(41, 37, 16);
   display: flex;
   font-family: 'Muli', sans-serif;
 }
 
-.contract, .existing-contracts {
+.contract,
+.existing-contracts {
   margin: 20px;
   width: 50%;
   padding: 40px;
   border: 1px solid #ddd;
-  background-color: #fff;
+  background-color: rgb(205, 211, 207);
+  border-radius: 10px;
 }
 
 h1 {
@@ -22,13 +24,16 @@ label {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  color: #aaa;
+  color: rgb(97, 74, 40);
   margin: 20px;
 }
 
-input[type="text"] {
+input[type='text'] {
   padding: 6px;
   font-size: 18px;
+  border-radius: 5px;
+  background-color: rgb(204, 221, 226);
+  margin-bottom: 10px;
 }
 
 .button {
@@ -42,6 +47,7 @@ input[type="text"] {
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
+  background-color: rgb(109, 94, 94);
 }
 
 .existing-contract ul {
