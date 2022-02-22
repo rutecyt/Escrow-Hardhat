@@ -1,6 +1,7 @@
 import { ethers } from 'ethers';
 import deploy from './deploy';
 import addContract from './addContract';
+import renderContracts from './renderContracts';
 import './index.scss';
 
 let contracts = 0;
@@ -15,5 +16,8 @@ async function newContract() {
   localStorage.setItem('deployedTrxs', JSON.stringify(deployedTrxs));
   addContract(++contracts, contract, arbiter, beneficiary, value);
 }
+
+let storedContracts = localStorage.getItem('deployedTrxs');
+renderContracts(storedContracts);
 
 document.getElementById('deploy').addEventListener('click', newContract);

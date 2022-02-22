@@ -33,7 +33,7 @@ function createHTML(buttonId, arbiter, beneficiary, value) {
         </li>
         <li>
           <div> Value </div>
-          <div> ${value} </div>
+          <div> ${ethers.utils.formatEther(value)} ether</div>
         </li>
         <div class="button" id="${buttonId}">
           Approve
