@@ -1,5 +1,6 @@
 !.gitignore
 cache
+dist
 .parcel-cache
 .cache
 node_modules
