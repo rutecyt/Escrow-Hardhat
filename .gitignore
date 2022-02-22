@@ -1,5 +1,4 @@
 !.gitignore
-dist
 cache
 .parcel-cache
 .cache
