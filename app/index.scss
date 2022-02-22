@@ -12,6 +12,8 @@ body {
   border: 1px solid #ddd;
   background-color: rgb(205, 211, 207);
   border-radius: 10px;
+  overflow-y: scroll;
+  font-size: 12px;
 }
 
 h1 {
@@ -26,6 +28,7 @@ label {
   text-transform: uppercase;
   color: rgb(97, 74, 40);
   margin: 20px;
+  font-size: 12px;
 }
 
 input[type='text'] {
