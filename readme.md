@@ -23,3 +23,9 @@ Compile the contracts using `npx hardhat compile`. The artifacts will be placed 
 To run the front-end application move into the `app` folder and run `npx parcel index.html`.
 
 You can learn more about Parcel [here](https://parceljs.org/).
+
+- - - - - - - - - -
+
+## Deployed (rutecyt)
+
+https://dazzling-euler-7ca457.netlify.app/
