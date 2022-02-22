@@ -1,4 +1,4 @@
-import Escrow from './artifacts/contracts/Escrow.sol/Escrow';
+import Escrow from './artifacts/contracts/Escrow.sol/Escrow.json';
 import {ethers} from 'ethers';
 
 const provider = new ethers.providers.Web3Provider(ethereum);
