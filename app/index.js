@@ -18,6 +18,8 @@ async function newContract() {
 }
 
 let storedContracts = localStorage.getItem('deployedTrxs');
-renderContracts(storedContracts);
+if (storedContracts) {
+  renderContracts(storedContracts);
+}
 
 document.getElementById('deploy').addEventListener('click', newContract);
